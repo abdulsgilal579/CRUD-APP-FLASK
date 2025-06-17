@@ -1,1 +1,2 @@
 # CRUD-APP-FLASK
+INSTALL FLASK MODULE USING - `pip install flask`
