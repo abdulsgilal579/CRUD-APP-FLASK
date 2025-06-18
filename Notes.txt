@@ -1,3 +1,13 @@
 **JINJA**
 Jinja is a template engine written in Python. It's used to create dynamic content, particularly for web pages, by combining templates with data. Jinja allows you to embed Python-like expressions and control structures within your templates, making it a powerful tool for generating dynamic text-based files like HTML, XML, and others. 
 Using this i can customize pages with just python without ever to use JavaScript
+
+**CDN**
+Content Delivery Network
+
+**Satic File**
+Things that do not change will go to static folder
+Like Javascript, Images, CSS
+
+whenever we use this {{}}
+It represents the python code. Variable, Expressions etc
