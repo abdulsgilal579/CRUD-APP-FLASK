@@ -4,4 +4,3 @@ To install Flask, use the command:
 `pip install flask-login`
 `pip install flask-sqlalchemy`
 
-Jinja is a template engine written in Python. It's used to create dynamic content, particularly for web pages, by combining templates with data. Jinja allows you to embed Python-like expressions and control structures within your templates, making it a powerful tool for generating dynamic text-based files like HTML, XML, and others. 
