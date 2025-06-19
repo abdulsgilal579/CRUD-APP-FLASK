@@ -1,4 +1,51 @@
 {% extends "base.html" %} {% block Title %} Sing Up {% endblock %} {%block
 content%}
-<h1>This is Sign Up Page</h1>
-{{text}} {%endblock%}
+<h1>Signup</h1>
+<form method="POST">
+  <div class="form-group">
+    <label for="Email">Email</label><br />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="e.g. xyz@gmail.com"
+    />
+  </div>
+  <div>
+    <label for="fname">Full Name</label><br />
+    <input
+      type="text"
+      id="fname"
+      name="fname"
+      class="form-control"
+      placeholder="Enter your full name"
+    />
+  </div>
+  <div>
+    <label for="pass">Password</label><br />
+    <input
+      type="password"
+      id="pass"
+      name="pass"
+      class="form-control"
+      placeholder="e.g. StrongPass!2024"
+    />
+  </div>
+  <div>
+    <label for="confirm_pass">Confirm Password</label><br />
+    <input
+      type="password"
+      id="confirm_pass"
+      name="confirm_pass"
+      class="form-control"
+      placeholder="Re-enter your password"
+    />
+  </div>
+  <div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <!--name = "name" or name = "email" is very import and we should add it to avoid issues with backend-->
+</form>
+{%endblock%}
