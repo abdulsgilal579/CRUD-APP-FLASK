@@ -41,7 +41,7 @@ def signup():
             )
             db.session.add(new_user)
             db.session.commit()
-            login_user(user, remember=True)
+            login_user(new_user, remember=True)
             flash("Account created successfully!", category="success")
             # Redirect back to signup page to clear the POST request
             return redirect(url_for("views.home"))
