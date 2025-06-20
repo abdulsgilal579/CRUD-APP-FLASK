@@ -51,10 +51,13 @@
           <!-- Links -->
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
+              {% if user.is_authenticated %}
               <li><a href="/">Home</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% else %}
               <li><a href="/login">Login</a></li>
               <li><a href="/signup">Sign Up</a></li>
-              <li><a href="/logout">Logout</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>
@@ -97,5 +100,6 @@
       type="text/javascript"
       src="{{url_for('static',filename='index.js')}}"
     ></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>
